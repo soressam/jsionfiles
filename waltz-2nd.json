@@ -1,0 +1,23 @@
+
+{
+  "songs": [
+    {
+      "title": "Dhalachuukootii jalqabdee",
+      "singer": "Amanti Kumara",
+      "lyrics": ["Dhalachuukootii jalqabdee na wajjin jirtaa \n Nuffitee waahee hin baasuu jettee "
+
+   ]
+
+    },
+    {
+      "title": "An Garuu Waahee keef",
+      "singer": "Amantii Kumara",
+      "lyrics": "These are the lyrics for Song 2..."
+    },
+    {
+      "title": "Song 3",
+      "singer": "Singer 3",
+      "lyrics": "These are the lyrics for Song 3..."
+    }
+  ]
+}

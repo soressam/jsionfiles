@@ -1,0 +1,159 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero .responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+ul.song-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li.song-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li.song-item:hover {
+    background-color: #f0f0f0;
+}
+
+#details {
+    margin: 20px 0;
+}
+
+#songTitle {
+    font-size: 24px;
+    color: #333;
+}
+
+#songSinger {
+    font-size: 18px;
+    color: #666;
+}
+
+#songLyrics {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Albumlist */
+/* Albumlist */
+/* Albumlist */
+/* Albumlist */
+
+.title {
+
+    font-size: 12px;
+}
+
+
+.albumlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    
+    
+
+}
+
+.albumlist li {
+    
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.albumlist li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Scalelist */
+/* Scalelist */
+/* Scalelist */
+
+.scale-list {
+
+     display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    
+    
+
+}
+
+.scale-list li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.scale-list li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    header, footer {
+        padding: 15px;
+    }
+}

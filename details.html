@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Lyrics Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Music Lyrics</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="album.html">Albums</a>
+                <a href="scales.html">Scales</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="index.html">Back to List</a>
+        <div id="details">
+            <h2 id="songTitle"></h2>
+            <h3 id="songSinger"></h3>
+            <p id="songLyrics"></p>
+        </div>
+<div class="song-details" id="songDetails">
+        <!-- Song details will be loaded here -->
+    </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Music Lyrics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function getQueryParams() {
+                const params = {};
+                const queryString = window.location.search.slice(1);
+                queryString.split('&').forEach(pair => {
+                    const [key, value] = pair.split('=');
+                    params[key] = decodeURIComponent(value);
+                });
+                return params;
+            }
+
+            const params = getQueryParams();
+            const fileName = params.file;
+            const songIndex = parseInt(params.id, 10);
+
+            if (fileName && !isNaN(songIndex)) {
+                fetch(fileName)
+                    .then(response => response.json())
+                    .then(data => {
+                        const song = data.songs[songIndex];
+                        const songDetails = document.getElementById('songDetails');
+
+// Check if lyrics is an array or string
+                        let lyricsHTML;
+                        if (Array.isArray(song.lyrics)) {
+                            lyricsHTML = song.lyrics.map(line => line.replace(/\n/g, '<br>')).join('<br>'); 
+                        } else {
+                            lyricsHTML = song.lyrics.replace(/\n/g, '<br>'); // Replace \n with <br> for strings
+                        }
+
+
+
+
+
+                        songDetails.innerHTML = `
+                            <h1>${song.title}</h1>
+                            <p>singer: ${song.singer}</p>
+                            <p><br>${song.lyrics}</p>
+                        `;
+                    })
+                    .catch(error => console.error('Error fetching song details:', error));
+            } else {
+                document.getElementById('songDetails').textContent = 'Invalid or missing parameters.';
+            }
+        });
+    </script>
+</body>
+</html>

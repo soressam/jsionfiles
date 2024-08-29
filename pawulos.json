@@ -1,0 +1,24 @@
+{
+  "songs": [
+    {
+      "title": "Digdamii Arfanii",
+      "singer": "Phawulos Tegegn",
+      "lyrics": ["Digdamii Arfanii Maanguddoonni sunii \n walharkaa Fuudhanii Aara hin galfatanii "
+        "Digdamii Arfanii Maanguddoonni sunii \n walharkaa Fuudhanii Aara hin galfatanii"
+        "ssDigdamii Arfanii Maanguddoonni sunii \n walharkaa Fuudhanii Aara hin galfatanii"
+
+   ]
+
+    },
+    {
+      "title": "Galatarratti Galata",
+      "singer": "Phawulos Tegegn",
+      "lyrics": "These are the lyrics for Song 2..."
+    },
+    {
+      "title": "Song 3",
+      "singer": "Singer 3",
+      "lyrics": "These are the lyrics for Song 3..."
+    }
+  ]
+}
