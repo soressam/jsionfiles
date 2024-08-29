@@ -65,11 +65,11 @@
                     .then(data => {
                         const song = data.songs[songIndex];
                         const songDetails = document.getElementById('songDetails');
-
+                        const formattedLyrics = song.lyrics.replace(/\n/g, '<br>');
                         songDetails.innerHTML = `
                             <h1>${song.title}</h1>
                             <p>singer: ${song.singer}</p>
-                            <p><br>${song.lyrics}</p>
+                            <p>${formattedLyrics}</p>
                         `;
                     })
                     .catch(error => console.error('Error fetching song details:', error));
