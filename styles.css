@@ -79,13 +79,30 @@ li.song-item:hover {
 }
 
 #songTitle {
-    font-size: 24px;
+    font-size: 20px;
     color: #333;
+text-align: center;
+ 
+  text-transform: uppercase;
+  background-color: grey;
+  color: #663399;
+  text-decoration: underline;
+  font-weight: bold;
+
 }
 
 #songSinger {
     font-size: 18px;
     color: #666;
+    text-align: center;
+  color:#663399 ;
+  
+  text-transform: uppercase;
+  
+  background-color: grey;
+  font-style: italic;
+  font-weight: bold;
+
 }
 
 #songLyrics {
