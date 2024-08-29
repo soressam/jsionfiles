@@ -155,9 +155,13 @@ text-align: center;
 }
 
 .scale-list li {
-    cursor: pointer;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    display: block; /* Ensures the text appears on a new line */
+   color: black; /* Subtext color */
+  font-size: 13px; /* Slightly smaller font size */
+  font-weight: bold;
+  margin-top: -10px;/* Negative margin to pull the element up */
 
 }
 
