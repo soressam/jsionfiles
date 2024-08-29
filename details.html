@@ -66,18 +66,6 @@
                         const song = data.songs[songIndex];
                         const songDetails = document.getElementById('songDetails');
 
-// Check if lyrics is an array or string
-                        let lyricsHTML;
-                        if (Array.isArray(song.lyrics)) {
-                            lyricsHTML = song.lyrics.map(line => line.replace(/\n/g, '<br>')).join('<br>'); 
-                        } else {
-                            lyricsHTML = song.lyrics.replace(/\n/g, '<br>'); // Replace \n with <br> for strings
-                        }
-
-
-
-
-
                         songDetails.innerHTML = `
                             <h1>${song.title}</h1>
                             <p>singer: ${song.singer}</p>
