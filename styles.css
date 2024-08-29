@@ -165,6 +165,26 @@ text-align: center;
     background-color: #f0f0f0;
 }
 
+.nav-link {
+
+/*border: 2px solid black;*/
+padding: 10px;
+margin-bottom: 10px;/*add space between list items*/
+
+}
+.subtext {
+  display: block; /* Ensures the text appears on a new line */
+  color: #663399;; /* Subtext color */
+  font-size: 10px; /* Slightly smaller font size */
+
+  margin-top: 5px;/*add some space between the main text and the sub text*/
+  text-align: justify;
+  margin-left: 50px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: -5px;/* Negative margin to pull the element up */
+}
+
 
 @media (max-width: 768px) {
     .container {
