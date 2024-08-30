@@ -67,9 +67,9 @@
                         const songDetails = document.getElementById('songDetails');
                         const formattedLyrics = song.lyrics.replace(/\n/g, '<br>');
                         songDetails.innerHTML = `
-                            <h1>${song.title}</h1>
-                            <p>singer: ${song.singer}</p>
-                            <p>${formattedLyrics}</p>
+                           <h2 class="song-title">${song.title}</h2>
+                         <h3 class="song-singer"> ${song.singer}</h3>
+                     <p class="song-lyrics">${formattedLyrics}</p>
                         `;
                     })
                     .catch(error => console.error('Error fetching song details:', error));
