@@ -159,7 +159,7 @@ text-align: center;
     border-bottom: 1px solid #ddd;
     display: block; /* Ensures the text appears on a new line */
    color: black; /* Subtext color */
-  font-size: 10px; /* Slightly smaller font size */
+  font-size: 11px; /* Slightly smaller font size */
   margin-top: -10px;/* Negative margin to pull the element up */
 
 }
