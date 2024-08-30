@@ -23,7 +23,11 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+.title {
 
+    font-size: 12px;
+    text-align: center;
+}
 
 /* Hero Section */
 .hero {
