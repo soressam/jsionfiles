@@ -164,7 +164,7 @@ text-align: center;
     border-bottom: 1px solid #ddd;
     display: block; /* Ensures the text appears on a new line */
    color: black; /* Subtext color */
-  font-size: 11px; /* Slightly smaller font size */
+  font-size: 12px; /* Slightly smaller font size */
   margin-top: -10px;/* Negative margin to pull the element up */
 
 }
@@ -187,7 +187,7 @@ margin-bottom: 10px;/*add space between list items*/
   margin-top: 5px;/*add some space between the main text and the sub text*/
   font-style: italic;
   margin-top: -5px;/* Negative margin to pull the element up */
-    margin-left:5px;
+    margin-left:10px;
 }
 
 
