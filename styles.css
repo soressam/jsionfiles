@@ -202,7 +202,6 @@ margin-bottom: 10px;/*add space between list items*/
     font-family: 'Arial', sans-serif; /* Sets the font family to Arial */
     text-align: center; /* Centers the title */
     margin-top: 20px; /* Adds a margin at the top */
-    text-decoration: underline;
     text-transform: uppercase;
 
 }
@@ -227,7 +226,15 @@ margin-bottom: 10px;/*add space between list items*/
     white-space: pre-wrap; /* Preserves white spaces and line breaks */
   
 }
-
+/* styles.css */
+.separator {
+    border: none; /* Remove the default border */
+    border-top: 2px solid #ccc; /* Create a solid line with a light gray color */
+    margin: 20px 0; /* Add space above and below the line */
+    width: 80%; /* Set the width of the line */
+    margin-left: auto; /* Center the line horizontally */
+    margin-right: auto; /* Center the line horizontally */
+}
 
 
 @media (max-width: 768px) {
