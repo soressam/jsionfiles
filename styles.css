@@ -225,10 +225,10 @@ margin-bottom: 10px;/*add space between list items*/
     line-height: 1.6; /* Add line height for improved spacing between lines */
     padding-bottom: 40px; /* Reduce padding to balance the content */
     padding-top: 20px; /* Add some padding to the top for spacing */
-    margin-top: 20px; /* Space above the lyrics */
-    margin-bottom: 40px; /* Space below the lyrics */
-    max-width: 750px; /* Set a max-width for better readability */
-    text-align: left; /* Align text to the left, commonly preferred for lyrics */
+    margin-top: 0px; /* Space above the lyrics */
+    margin-bottom: 20px; /* Space below the lyrics */
+    max-width: 800px; /* Set a max-width for better readability */
+    text-align: justify; /* Align text to the left, commonly preferred for lyrics */
     margin-left: auto; /* Center align the block */
     margin-right: auto; /* Center align the block */
     font-family: 'Georgia', serif; /* Use a serif font for a classic look */
