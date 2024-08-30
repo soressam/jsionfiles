@@ -28,7 +28,10 @@ header a:hover, footer a:hover {
     font-size: 12px;
     text-align: center;
 }
+.header-title{
 
+    font-size: 24px;
+}
 /* Hero Section */
 .hero {
     position: relative;
