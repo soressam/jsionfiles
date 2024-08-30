@@ -226,9 +226,10 @@ margin-bottom: 10px;/*add space between list items*/
         padding-bottom: 100px; /* Add padding below the text */
         padding-top: 0px;
         margin-top: 0;
-        width:90%;
+       max-width:800px;
         text-align: justify;
-        margin-left:10px;
+        margin-left:15px;
+       margin-right:10px;
         font-family:'Georgia',serif;
   
 }
