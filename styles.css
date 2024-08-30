@@ -229,7 +229,7 @@ margin-bottom: 10px;/*add space between list items*/
         /*to justify and center at the same time*/
         width: 100%;
         text-align: justify;
-        margin-left: auto;
+        margin: 0 auto;
         white-space: pre-wrap;
       
   
