@@ -134,6 +134,10 @@ text-align: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
     font-size:12px;
+    padding: 10px;
+    display: block; /* Ensures the text appears on a new line */
+   color: black; /* Subtext color */
+    margin-top: -10px;/* Negative margin to pull the element up */
 
 }
 
