@@ -228,8 +228,8 @@ margin-bottom: 10px;/*add space between list items*/
         margin-top: 0;
         /*to justify and center at the same time*/
         width: 100%;
-        text-align: justify-all;
-        margin:0px;
+        text-align: justify;
+        margin-left: auto;
         white-space: pre-wrap;
       
   
