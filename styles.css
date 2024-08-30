@@ -228,7 +228,7 @@ margin-bottom: 10px;/*add space between list items*/
         margin-top: 0;
         /*to justify and center at the same time*/
         width: 80%;
-        text-align: justify;
+        text-align: left;
       
   
 }
