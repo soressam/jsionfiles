@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Song Lyrics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .contact-info {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Submit Song Lyrics</h1>
+    <form id="lyricsForm">
+        <label for="scale">Scale Type:</label>
+        <input type="text" id="scale" name="scale" required>
+
+        <label for="singer">Singer's Name:</label>
+        <input type="text" id="singer" name="singer" required>
+
+        <label for="title">Title of Song:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="lyrics">Lyrics:</label>
+        <textarea id="lyrics" name="lyrics" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-info">
+        <p>Contact Information:</p>
+        <p>Phone: +123456789</p>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>Telegram: <a href="https://t.me/yourtelegramchannel" target="_blank">@yourtelegramchannel</a></p>
+        <p>Facebook: <a href="https://facebook.com/yourfacebookpage" target="_blank">facebook.com/yourfacebookpage</a></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('lyricsForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const scale = document.getElementById('scale').value;
+        const singer = document.getElementById('singer').value;
+        const title = document.getElementById('title').value;
+        const lyrics = document.getElementById('lyrics').value;
+
+        const message = `*New Song Lyrics Submission*\n\n*Scale Type:* ${scale}\n*Singer's Name:* ${singer}\n*Title of Song:* ${title}\n*Lyrics:*\n${lyrics}`;
+
+        const telegramAPI = `https://api.telegram.org/bot7023316239:AAG0bmiPtEgm7deK65L2dloz6UPI1lruOGA/sendMessage?chat_id=572789863&text=${encodeURIComponent(message)}&parse_mode=Markdown`;
+
+        fetch(telegramAPI, {
+            method: 'GET'
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                alert('Lyrics submitted successfully!');
+                document.getElementById('lyricsForm').reset();
+            } else {
+                alert('Failed to submit lyrics. Please try again.');
+            }
+        })
+        .catch(error => {
+            alert('Error submitting lyrics: ' + error.message);
+        });
+    });
+</script>
+
+</body>
+</html>
