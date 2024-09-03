@@ -4,6 +4,7 @@ self.addEventListener('install', event => {
       return cache.addAll([
         '/',
         '/index.html',
+        '/album.html',
         '/styles.css',
         '/songs.html',
         '/guta.json',
