@@ -280,11 +280,53 @@ font-size: 18px;
             text-align: center; /* center the text within the header */ 
 }
 
+
+/* Specific styles for the Telegram link */
+.telegram-link {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #0088cc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.telegram-link h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.telegram-link a {
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #005f8c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.telegram-link a:hover {
+    background-color: #004a6b;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 95%;
     }
     header, footer {
         padding: 15px;
+    }
+
+    .telegram-link {
+        padding: 10px;
+    }
+
+    .telegram-link h4 {
+        font-size: 1.1em;
+    }
+
+    .telegram-link a {
+        font-size: 1em;
     }
 }
