@@ -7,6 +7,8 @@ self.addEventListener('install', event => {
         '/styles.css',
         '/songs.html',
         '/guta.json',
+        '/songs.json',
+        '/pawulos.json',
         '/details.html'
         
       ]);
