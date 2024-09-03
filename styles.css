@@ -283,10 +283,10 @@ font-size: 18px;
 
 /* Specific styles for the Telegram link */
 .telegram-link {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 10px;
     background-color: #0088cc;
-    border-radius: 8px;
+    border-radius: 4px;
     text-align: center;
 }
 
