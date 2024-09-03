@@ -286,7 +286,7 @@ font-size: 18px;
     margin-top: 15px;
     padding: 10px;
     background-color: #0088cc;
-    border-radius: 4px;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -319,7 +319,7 @@ font-size: 18px;
     }
 
     .telegram-link {
-        padding: 10px;
+        padding: 8px;
     }
 
     .telegram-link h4 {
