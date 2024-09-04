@@ -319,6 +319,16 @@ font-size: 18px;
     header, footer {
         padding: 15px;
     }
+.telegram-link {
+        padding: 8px;
+    }
 
+    .telegram-link h10 {
+        font-size: 10px;
+    }
+
+    .telegram-link a {
+        font-size: 1em;
+    }
     
 }
