@@ -290,7 +290,7 @@ font-size: 18px;
     text-align: center;
 }
 
-.telegram-link h4 {
+.telegram-link h10 {
     color: #fff;
     margin-bottom: 10px;
     font-size: 1.2em;
@@ -322,8 +322,8 @@ font-size: 18px;
         padding: 8px;
     }
 
-    .telegram-link h4 {
-        font-size: 1.1em;
+    .telegram-link h10 {
+        font-size: 10px;
     }
 
     .telegram-link a {
