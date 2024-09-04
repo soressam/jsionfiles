@@ -72,6 +72,24 @@
             <p>&copy; 2024 Music Lyrics. All rights reserved.</p>
         </div>
     </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let list = document.querySelector('.albumlist');
+        let items = list.querySelectorAll('li');
+
+        // Convert NodeList to an array
+        items = Array.from(items);
+
+        // Sort the items alphabetically by the text content
+        items.sort((a, b) => a.textContent.trim().localeCompare(b.textContent.trim()));
+
+        // Append the sorted items back to the list
+        items.forEach(item => list.appendChild(item));
+    });
+</script>
+
+    
     
 </body>
 </html>
